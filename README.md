@@ -1,0 +1,3 @@
+astrowxre is a executor that is 99% undetectable and supports pc and mobile.
+
+WARNING: DOWNLOAD AT YOUR OWN RISKS ALTHOUGH THIS EXECUTOR HAS A 1% CHANCE OF DETECTION IT IS NOT IMPOSSIBLE BUT IT IS STILL VERY LOW.
