@@ -1,1 +1,48 @@
+local RemoteEvent = Instance.new("RemoteEvent")
+RemoteEvent.Parent = game.ReplicatedStorage
 
+RemoteEvent.OnServerEvent:Connect(function(player,   
+ script)
+    -- Send the script to all clients
+    RemoteEvent:FireAllClients(script)
+end)
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextLabel = Instance.new("TextLabel")
+local   
+ ExecuteButton = Instance.new("TextButton")
+-- ... other buttons and properties as before
+
+-- ... other functionality as before
+
+ExecuteButton.MouseButton1Click:Connect(function()
+    local scriptContent = TextBox.Text
+    RemoteEvent:FireServer(scriptContent) -- Send the script to the server
+end)
+
+-- Function to execute the script on the client
+local function executeScript(script)
+    local success, errorMessage = pcall(loadstring, script)
+    if success then
+        local loadedFunction = loadstring(script)
+        loadedFunction()
+    else
+        print("Error executing script:", errorMessage)
+        -- Consider displaying an error message to the user
+    end
+end
+
+-- Listen for the script from the server
+RemoteEvent.OnClientEvent:Connect(executeScript)
+
+-- Check for version and show UI
+local function checkVersionAndShowUI()
+    local currentVersion = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+    if currentVersion.VersionId == 25925860 then
+        ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    end
+end
+
+game:GetService("RunService").Heartbeat:Connect(checkVersionAndShowUI)
