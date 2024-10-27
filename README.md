@@ -10,7 +10,7 @@ WARNING: DOWNLOAD AT YOUR OWN RISKS ALTHOUGH THIS EXECUTOR HAS A 1% CHANCE OF DE
 
 HOW TO DOWNLOAD:
 
-#1 download urban vpn or fastvpn i recomend fast vpn as its faster than urban vpn this helps keep ypur device safe and prevents alt account detection as you can switch locations and change ip,download links are below:
+#1 download urban vpn or fastvpn i recomend fast vpn as its faster than urban vpn this helps keep your device safe and prevents alt account detection as you can switch locations and change ip,download links are below:
 
 https://fastvpn.com/windows-app/
 
