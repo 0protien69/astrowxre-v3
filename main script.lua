@@ -111,4 +111,14 @@ UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
             ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
         end
     end
-end)
+end) 
+
+local function checkVersionAndShowUI()
+    local currentVersion = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+    if currentVersion.VersionId == 25925860 then
+        -- Show the UI
+        ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    end
+end
+
+game:GetService("RunService").Heartbeat:Connect(checkVersionAndShowUI)
