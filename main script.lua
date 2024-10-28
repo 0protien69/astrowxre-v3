@@ -27,7 +27,7 @@ TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 255)
 TextLabel.Text = "Astrowxre v3"
-TextLabel.TextSize = 19
+TextLabel.TextSize = 22
 TextLabel.Position = UDim2.new(0.05, 0, 0.02, 0)
 
 ExecuteButton.Parent = Frame
