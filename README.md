@@ -32,3 +32,10 @@ https://www.urban-vpn.com/fr/
 
 
 we recomend all users should use this executor resposibly and excersise caution.
+
+
+
+
+
+
+if your smart enough to know what a executor is,then you smart enough to know to use a alt account.
